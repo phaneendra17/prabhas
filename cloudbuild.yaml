@@ -9,4 +9,4 @@ steps:
   id: Pushing the image to registry
 # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'test-webhook', '--image', 'gcr.io/lofty-apex-422010/test:${SHORT_SHA}', '--region', 'us-central1', '--platform', 'managed', "--allow-unauthenticated"]
+  args: ['run', 'deploy', 'test-webhook-qa', '--image', 'gcr.io/lofty-apex-422010/test:${SHORT_SHA}', '--region', 'us-central1', '--platform', 'managed', "--allow-unauthenticated"]
